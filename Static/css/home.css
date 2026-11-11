@@ -1,4 +1,4 @@
-﻿
+
 * {
     margin: 0;
     padding: 0;
@@ -224,7 +224,7 @@ main {
     justify-content: center;
     gap: 15px;
     min-height: 65px;
-    margin-right:40px;
+    margin-right: 40px;
 }
 
 .carddois img {
@@ -334,7 +334,7 @@ main {
     background-color: #FFF9F5;
 }
 
-/* COLUNA DE AÇÕES DOS PRODUTOS */
+/* COLUNA DE AÇÕES */
 
 .tabela-produtosRecentes th:last-child,
 .tabela-produtosRecentes td:last-child {
@@ -384,8 +384,6 @@ main {
 .botao-deletar:hover {
     background-color: #F2C4B5;
 }
-
-/* BOTÕES DOS PRODUTOS LADO A LADO */
 
 .tabela-produtosRecentes .acoes {
     display: flex;
@@ -486,7 +484,13 @@ footer {
 
     header {
         height: 64px;
-        padding: 10px;
+        padding: 8px 10px;
+    }
+
+    .barra-menu {
+        display: block;
+        width: 18px;
+        margin-right: 8px;
     }
 
     header .logo {
@@ -495,11 +499,15 @@ footer {
     }
 
     .nome-logo h1 {
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .nome-logo p {
-        font-size: 7px;
+        font-size: 6px;
+    }
+
+    header nav a {
+        font-size: 11px;
     }
 
     main {
@@ -507,136 +515,194 @@ footer {
     }
 
     .barra-botoes {
-        width: 100%;
-        min-width: 0;
-        min-height: 0;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 8px;
-    }
-
-    .barra-botoes a {
-        width: 50%;
-        margin: 0;
-        font-size: 13px;
-    }
-
-    .barra-botoes a img {
-        width: 22px;
-        margin-right: 8px;
-    }
-
-    .frase-lateral,
-    .barra-botoes > img {
         display: none;
     }
 
     .conteudo {
-        padding: 20px 12px;
+        padding: 25px 20px;
     }
+
+    /* SAUDAÇÃO */
 
     .ola {
         flex-direction: column;
         align-items: flex-start;
+        gap: 15px;
+        padding: 0 15px;
     }
+
+    .texto-ola h2 {
+        font-size: 17px;
+    }
+
+    .texto-ola p {
+        font-size: 10px;
+    }
+
+    /* BOTÕES */
 
     .adicionar {
         width: 100%;
-        gap: 8px;
+        gap: 15px;
     }
 
     .adicionar-insumo,
     .adicionar-produto {
         flex: 1;
-        height: 50px;
+        width: auto;
+        height: 38px;
+        font-size: 10px;
+        padding: 5px;
     }
+
+    .mais {
+        font-size: 19px;
+        margin-right: 5px;
+    }
+
+    /* CARDS DE RESUMO */
 
     .area-cards-tabelas {
-        margin-top: 25px;
+        margin-top: 30px;
     }
-
-    /* CARDS NO CELULAR */
 
     .cards {
         flex-direction: column;
-        gap: 12px;
+        align-items: center;
+        gap: 27px;
     }
 
     .card {
-        width: 100%;
-        min-width: 0;
-        height: 155px;
-        padding: 12px 15px;
+        width: 150px;
+        min-width: 150px;
+        height: 106px;
+        flex: none;
+        padding: 12px;
+    }
+
+    .carddois {
+        justify-content: flex-start;
+        gap: 10px;
+        margin-right: 0;
+        min-height: 40px;
     }
 
     .carddois img {
-        width: 60px;
-        height: 60px;
+        width: 36px;
+        height: 36px;
     }
 
     .card .info {
-        font-size: 12px;
+        font-size: 9px;
+        line-height: 13px;
     }
 
     .card .num {
-        font-size: 25px;
+        font-size: 17px;
+        margin-top: 15px;
     }
 
-    /* TABELAS NO CELULAR */
+    /* TABELAS */
 
     .tabelas {
         flex-direction: column;
-        gap: 15px;
+        gap: 40px;
+        margin-top: 27px;
     }
 
     .tabela-insumosRecentes,
     .tabela-produtosRecentes {
         width: 100%;
-        padding: 10px 5px;
+        padding: 0 0 12px;
     }
 
-    .tabelas th,
-    .tabelas td {
-        font-size: 10px;
-        padding: 8px 3px;
+    .nome-tabela {
+        min-height: 45px;
+        padding: 5px 20px;
+        margin-bottom: 0;
+    }
+
+    .nome-tabela img {
+        width: 34px;
+        height: 34px;
     }
 
     .nome-tabela h3 {
-        font-size: 15px;
+        font-size: 11px;
+    }
+
+    .tabelas table {
+        width: 100%;
+        border-collapse: separate;
+    }
+
+    .tabelas th {
+        font-size: 8px;
+        padding: 5px 2px;
+        text-align: center;
+    }
+
+    .tabelas tbody tr {
+        height: 65px;
+        background-color: white;
+        box-shadow: 0 2px 3px #00000035;
+    }
+
+    .tabelas td {
+        font-size: 8px;
+        padding: 8px 3px;
+        text-align: center;
+        background-color: white;
+    }
+
+    /* ESCONDER CUSTO TOTAL */
+
+    .esconder {
+        display: none;
+    }
+
+    /* AÇÕES */
+
+    .acoes {
+        flex-direction: column;
+        gap: 5px;
     }
 
     .botao-editar,
     .botao-deletar {
-        font-size: 9px;
-        padding: 4px 5px;
-    }
-
-    /* BOTÕES DOS PRODUTOS LADO A LADO */
-
-    .tabela-produtosRecentes th,
-    .tabela-produtosRecentes td{
-        width: 100px;
-    }
-
-    .tabela-produtosRecentes .acoes {
-        flex-wrap: nowrap;
-        gap: 3px;
-    }
-
-    .tabela-produtosRecentes .botao-editar, .tabela-produtosRecentes .botao-deletar {
-        font-size: 9px;
-        padding: 4px;
+        font-size: 8px;
+        padding: 3px 5px;
+        white-space: nowrap;
     }
 
     /* RODAPÉ */
 
     footer {
-        flex-wrap: wrap;
-        gap: 15px;
-        padding: 15px;
+        padding: 15px 5px;
+        gap: 5px;
+        font-size: 7px;
+    }
+
+    .logo-footer {
+        gap: 4px;
+    }
+
+    .logo-footer img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logo-footer h2 {
+        font-size: 8px;
+    }
+
+    .logo-footer p {
+        font-size: 5px;
     }
 
     .frase {
-        margin-left: 10px;
+        margin-left: 0;
+        font-size: 6px;
     }
+
 }
